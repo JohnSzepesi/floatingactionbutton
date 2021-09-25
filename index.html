@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>Action Button</title>
+    </head>
+    <body>
+        <div class="action" onclick="actionToggle();">
+            <span>+</span>
+            <ul>
+                <li>
+                    <a href="http://facebook.com">
+                        <img src="./img/face.png" alt="" />Share on Facebook</a
+                    >
+                </li>
+                <li>
+                    <a href="http://twitter.com">
+                        <img src="./img/twitter.png" alt="" />Share on
+                        Twitter</a
+                    >
+                </li>
+                <li>
+                    <a href="http://instagram.com">
+                        <img src="./img/insta.png" alt="" />Share on
+                        Instagram</a
+                    >
+                </li>
+                <li>
+                    <a href="http://linkedin.com">
+                        <img src="./img/linkedin.png" alt="" />Share on
+                        Linkedin</a
+                    >
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function actionToggle() {
+                var action = document.querySelector(".action");
+                action.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
